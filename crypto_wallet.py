@@ -47,7 +47,7 @@ def get_balance(address):
     return ether
 
 
-def send_transaction(w3, account, to, wage):
+def send_transaction(account, to, wage):
     """Send an authorized transaction to the Ganache blockchain."""
     # Set gas price strategy
     w3.eth.setGasPriceStrategy(medium_gas_price_strategy)
